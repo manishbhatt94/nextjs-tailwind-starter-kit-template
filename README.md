@@ -3,8 +3,8 @@
 ## Getting Started
 
 ```
-git clone https://github.com/muhajirdev/nextjs-tailwind-template
-cd nextjs-tailwind-template
+git clone https://github.com/muke5hy/nextjs-tailwind-starter-kit-template
+cd nextjs-tailwind-starter-kit-template
 
 npm install
 npm run dev
