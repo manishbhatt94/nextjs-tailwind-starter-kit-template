@@ -1,22 +1,21 @@
-import { useLocalStorage } from "react-use";
-import "../styles/main.css";
+import { useLocalStorage } from 'react-use'
+import Navbar from '../components/navbar'
+import Footer from '../components/footer'
+import '../styles/main.css'
+
 const Layout: React.FC = ({ children }) => {
-  const [theme, setTheme] = useLocalStorage("theme", "dark");
+  const [theme, setTheme] = useLocalStorage('theme', 'dark')
 
   const toggleTheme = () =>
-    theme === "dark" ? setTheme("light") : setTheme("dark");
+    theme === 'dark' ? setTheme('light') : setTheme('dark')
 
   return (
-    <div className={theme}>
-      <div
-        className="absolute top-0 right-0 btn btn-secondary mr-4 mt-4 cursor-pointer"
-        onClick={toggleTheme}
-      >
-        {theme}
-      </div>
-      <div>{children}</div>
-    </div>
-  );
-};
+    <>
+      <Navbar transparent />
+      {children}
+      <Footer />
+    </>
+  )
+}
 
-export default Layout;
+export default Layout
