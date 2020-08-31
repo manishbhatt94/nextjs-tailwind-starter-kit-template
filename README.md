@@ -19,4 +19,4 @@ npm run build
 
 More info https://nextjs.org/learn/basics/getting-started
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/zeit/now-examples/tree/master/nextjs)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/muke5hy/nextjs-tailwind-starter-kit-template)
