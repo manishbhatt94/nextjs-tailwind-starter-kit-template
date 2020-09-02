@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-tailwind-template",
+  "name": "nextjs--starter-kit-template",
   "version": "1.0.0",
   "description": "NextJS + TailwindCSS Template with PurgeCSS",
   "main": "index.js",
@@ -13,12 +13,13 @@
   },
   "keywords": [],
   "author": {
-    "email": "muhammad@muhajir.dev",
-    "name": "Muhammad Muhajir",
-    "url": "https://muhajir.dev"
+    "email": "mak.gnu@gmail.com",
+    "name": "Mukesh Yadav",
+    "url": "https://mukeshyadav.com"
   },
   "license": "ISC",
   "dependencies": {
+    "@mapbox/rehype-prism": "^0.5.0",
     "@types/popper.js": "^1.11.0",
     "chart.js": "^2.9.3",
     "cross-env": "^5.2.0",
@@ -30,13 +31,21 @@
     "react-chartjs-2": "^2.10.0",
     "react-dom": "^16.8.6",
     "react-use": "^12.8.0",
-    "styled-jsx-plugin-postcss": "^2.0.1"
+    "rehype-prism": "^0.1.1",
+    "rehype-stringify": "^8.0.0",
+    "remark-parse": "^8.0.3",
+    "remark-rehype": "^7.0.0",
+    "styled-jsx-plugin-postcss": "^2.0.1",
+    "unified": "^9.2.0"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^9.5.3",
     "@types/node": "^12.6.2",
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.4",
     "@zeit/next-css": "^1.0.1",
+    "date-fns": "^2.16.1",
+    "gray-matter": "^4.0.2",
     "next-purgecss": "^3.1.1",
     "tailwindcss": "^1.7.6",
     "typescript": "^3.5.3"

@@ -1,11 +1,11 @@
 import React from "react";
 
-import Navbar from "../components/dashboard/Navbar";
-import Sidebar from "../components/dashboard/Sidebar";
-import LineChart from "../components/dashboard/chart/LineChart";
-import BarChart from "../components/dashboard/chart/BarChart";
-import RadarChart from "../components/dashboard/chart/RadarChart";
-import DougnutChart from "../components/dashboard/chart/DougnutChart";
+import Navbar from "../src/components/dashboard/Navbar";
+import Sidebar from "../src/components/dashboard/Sidebar";
+import LineChart from "../src/components/dashboard/chart/LineChart";
+import BarChart from "../src/components/dashboard/chart/BarChart";
+import RadarChart from "../src/components/dashboard/chart/RadarChart";
+import DougnutChart from "../src/components/dashboard/chart/DougnutChart";
 import "../styles/main.css";
 
 export default function Dashboard() {
