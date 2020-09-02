@@ -2,6 +2,10 @@
 
 ## Getting Started
 
+#### React-charjs components samples
+
+https://github.com/jerairrest/react-chartjs-2/tree/master/example/src/components
+
 ```
 git clone https://github.com/muke5hy/nextjs-tailwind-starter-kit-template
 cd nextjs-tailwind-starter-kit-template

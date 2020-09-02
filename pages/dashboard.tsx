@@ -2,8 +2,10 @@ import React from "react";
 
 import Navbar from "../components/dashboard/Navbar";
 import Sidebar from "../components/dashboard/Sidebar";
-import LineChart from "../components/dashboard/LineChart";
-import BarChart from "../components/dashboard/BarChart";
+import LineChart from "../components/dashboard/chart/LineChart";
+import BarChart from "../components/dashboard/chart/BarChart";
+import RadarChart from "../components/dashboard/chart/RadarChart";
+import DougnutChart from "../components/dashboard/chart/DougnutChart";
 import "../styles/main.css";
 
 export default function Dashboard() {
@@ -138,10 +140,13 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
+
         <div className="px-4 md:px-10 mx-auto w-full -m-24">
           <div className="flex flex-wrap">
             <LineChart />
             <BarChart />
+            <RadarChart />
+            <DougnutChart />
           </div>
           <div className="flex flex-wrap mt-4">
             <div className="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">

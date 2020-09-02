@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Navbar(props) {
+export default function Navbar(props: { transparent: any }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
