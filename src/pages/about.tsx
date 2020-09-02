@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Content } from '../components/content/Content';
 import { Meta } from '../components/Meta';
+
+// FIXME: Importing Dummy Main component to make build pass
 import { Main } from '../components/templates/Main';
 
 const About = () => (

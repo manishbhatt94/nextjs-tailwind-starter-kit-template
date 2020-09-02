@@ -4,12 +4,13 @@ import Popper from "popper.js";
 const NotificationDropdown = () => {
   // dropdown props
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
-  const btnDropdownRef = React.createRef();
-  const popoverDropdownRef = React.createRef();
+  const btnDropdownRef = React.createRef<HTMLAnchorElement>();
+  const popoverDropdownRef = React.createRef<HTMLDivElement>();
   const openDropdownPopover = () => {
     console.log("hey");
-    const { current } = btnDropdownRef;
-    new Popper(current, popoverDropdownRef.current, {
+    const button = btnDropdownRef.current as HTMLAnchorElement;
+    const popover = popoverDropdownRef.current as HTMLDivElement;
+    new Popper(button, popover, {
       placement: "bottom-end",
     });
     setDropdownPopoverShow(true);

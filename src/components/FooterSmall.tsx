@@ -1,6 +1,10 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
-export default function FooterSmall(props) {
+interface Props {
+  absolute: boolean;
+}
+
+const FooterSmall: FunctionComponent<Props> = (props) => {
   return (
     <>
       <footer
@@ -65,4 +69,6 @@ export default function FooterSmall(props) {
       </footer>
     </>
   );
-}
+};
+
+export default FooterSmall;

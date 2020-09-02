@@ -5,7 +5,10 @@ import { GetStaticProps } from 'next';
 import { BlogGallery, IBlogGalleryProps } from '../components/blog/BlogGallery';
 import { Meta } from '../components/Meta';
 import { IPaginationProps } from '../components/blog/Pagination';
+
+// FIXME: Importing Dummy Main component to make build pass
 import { Main } from '../components/templates/Main';
+
 import { Config } from '../utils/Config';
 import { getAllPosts } from '../utils/Content';
 
