@@ -1,4 +1,4 @@
-import Layout from '../src/components/Layout'
+import Layout from "../src/components/Layout";
 
 const Home = () => (
   <>
@@ -7,7 +7,7 @@ const Home = () => (
         <div
           className="relative pt-16 pb-32 flex content-center items-center justify-center"
           style={{
-            minHeight: '75vh',
+            minHeight: "75vh",
           }}
         >
           <div
@@ -40,7 +40,7 @@ const Home = () => (
           </div>
           <div
             className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-            style={{ height: '70px', transform: 'translateZ(0)' }}
+            style={{ height: "70px", transform: "translateZ(0)" }}
           >
             <svg
               className="absolute bottom-0 overflow-hidden"
@@ -149,8 +149,8 @@ const Home = () => (
                       viewBox="0 0 583 95"
                       className="absolute left-0 w-full block"
                       style={{
-                        height: '95px',
-                        top: '-94px',
+                        height: "95px",
+                        top: "-94px",
                       }}
                     >
                       <polygon
@@ -176,7 +176,7 @@ const Home = () => (
         <section className="relative py-20">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-            style={{ height: '80px', transform: 'translateZ(0)' }}
+            style={{ height: "80px", transform: "translateZ(0)" }}
           >
             <svg
               className="absolute bottom-0 overflow-hidden"
@@ -281,7 +281,7 @@ const Home = () => (
                     alt="..."
                     src="./img/team-1-800x800.jpg"
                     className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: '120px' }}
+                    style={{ maxWidth: "120px" }}
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">Ryan Tompson</h5>
@@ -317,7 +317,7 @@ const Home = () => (
                     alt="..."
                     src="./img/team-2-800x800.jpg"
                     className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: '120px' }}
+                    style={{ maxWidth: "120px" }}
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">Romina Hadid</h5>
@@ -347,7 +347,7 @@ const Home = () => (
                     alt="..."
                     src="./img/team-3-800x800.jpg"
                     className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: '120px' }}
+                    style={{ maxWidth: "120px" }}
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">Alexa Smith</h5>
@@ -383,7 +383,7 @@ const Home = () => (
                     alt="..."
                     src="./img/team-4-470x470.png"
                     className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: '120px' }}
+                    style={{ maxWidth: "120px" }}
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">Jenna Kardi</h5>
@@ -426,7 +426,7 @@ const Home = () => (
         <section className="pb-20 relative block bg-gray-900">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-            style={{ height: '80px', transform: 'translateZ(0)' }}
+            style={{ height: "80px", transform: "translateZ(0)" }}
           >
             <svg
               className="absolute bottom-0 overflow-hidden"
@@ -521,7 +521,7 @@ const Home = () => (
                         type="text"
                         className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                         placeholder="Full Name"
-                        style={{ transition: 'all .15s ease' }}
+                        style={{ transition: "all .15s ease" }}
                       />
                     </div>
 
@@ -536,7 +536,7 @@ const Home = () => (
                         type="email"
                         className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                         placeholder="Email"
-                        style={{ transition: 'all .15s ease' }}
+                        style={{ transition: "all .15s ease" }}
                       />
                     </div>
 
@@ -548,8 +548,6 @@ const Home = () => (
                         Message
                       </label>
                       <textarea
-                        rows="4"
-                        cols="80"
                         className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                         placeholder="Type a message..."
                       />
@@ -558,7 +556,7 @@ const Home = () => (
                       <button
                         className="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
                         type="button"
-                        style={{ transition: 'all .15s ease' }}
+                        style={{ transition: "all .15s ease" }}
                       >
                         Send Message
                       </button>
@@ -572,6 +570,6 @@ const Home = () => (
       </main>
     </Layout>
   </>
-)
+);
 
-export default Home
+export default Home;

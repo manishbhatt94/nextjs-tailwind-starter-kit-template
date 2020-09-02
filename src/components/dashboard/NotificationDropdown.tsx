@@ -8,8 +8,9 @@ const NotificationDropdown = () => {
   const popoverDropdownRef = React.createRef();
   const openDropdownPopover = () => {
     console.log("hey");
-    new Popper(btnDropdownRef.current, popoverDropdownRef.current, {
-      placement: "bottom-end"
+    const { current } = btnDropdownRef;
+    new Popper(current, popoverDropdownRef.current, {
+      placement: "bottom-end",
     });
     setDropdownPopoverShow(true);
   };
@@ -22,7 +23,7 @@ const NotificationDropdown = () => {
         className="text-gray-600 block py-1 px-3"
         href="#pablo"
         ref={btnDropdownRef}
-        onClick={e => {
+        onClick={(e) => {
           e.preventDefault();
           dropdownPopoverShow ? closeDropdownPopover() : openDropdownPopover();
         }}
@@ -42,7 +43,7 @@ const NotificationDropdown = () => {
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
           }
-          onClick={e => e.preventDefault()}
+          onClick={(e) => e.preventDefault()}
         >
           Action
         </a>
@@ -51,7 +52,7 @@ const NotificationDropdown = () => {
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
           }
-          onClick={e => e.preventDefault()}
+          onClick={(e) => e.preventDefault()}
         >
           Another action
         </a>
@@ -60,7 +61,7 @@ const NotificationDropdown = () => {
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
           }
-          onClick={e => e.preventDefault()}
+          onClick={(e) => e.preventDefault()}
         >
           Something else here
         </a>
@@ -70,7 +71,7 @@ const NotificationDropdown = () => {
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
           }
-          onClick={e => e.preventDefault()}
+          onClick={(e) => e.preventDefault()}
         >
           Seprated link
         </a>
