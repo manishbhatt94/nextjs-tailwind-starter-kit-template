@@ -6,7 +6,6 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import { Content } from "../../src/components/content/Content";
 import { Meta } from "../../src/components/Meta";
 import Layout from "../../src/components/Layout";
-import { Main } from "../../src/components/templates/Main";
 import { getAllPosts, getPostBySlug } from "../../src/utils/Content";
 import { markdownToHtml } from "../../src/utils/Markdown";
 
