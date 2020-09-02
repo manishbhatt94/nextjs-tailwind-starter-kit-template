@@ -104,7 +104,7 @@ export default function Sidebar() {
               </li>
 
               <li className="items-center">
-                <Link href="/">
+                <Link href="/profile">
                   <a
                     href="#"
                     className="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block"
@@ -116,7 +116,7 @@ export default function Sidebar() {
               </li>
 
               <li className="items-center">
-                <Link href="/">
+                <Link href="/login">
                   <a
                     href="#"
                     className="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block"
@@ -167,66 +167,6 @@ export default function Sidebar() {
                   >
                     <i className="fas fa-paint-brush mr-2 text-gray-500 text-base"></i>{" "}
                     Styles
-                  </a>
-                </Link>
-              </li>
-
-              <li className="inline-flex">
-                <Link href="/">
-                  <a
-                    href="#"
-                    className="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
-                  >
-                    <i className="fab fa-css3-alt mr-2 text-gray-500 text-base" />
-                    CSS Components
-                  </a>
-                </Link>
-              </li>
-
-              <li className="inline-flex">
-                <Link href="/">
-                  <a
-                    href="#"
-                    className="text-gray-800 hover:text-gray-600 text-sm block mb-4 no-underline font-semibold"
-                  >
-                    <i className="fab fa-vuejs mr-2 text-gray-500 text-base" />
-                    VueJS
-                  </a>
-                </Link>
-              </li>
-
-              <li className="inline-flex">
-                <Link href="/">
-                  <a
-                    href="#"
-                    className="text-gray-800 hover:text-gray-600  text-sm block mb-4 no-underline font-semibold"
-                  >
-                    <i className="fab fa-react mr-2 text-gray-500 text-base" />
-                    React
-                  </a>
-                </Link>
-              </li>
-
-              <li className="inline-flex">
-                <Link href="/">
-                  <a
-                    href="#"
-                    className="text-gray-800 hover:text-gray-600  text-sm block mb-4 no-underline font-semibold"
-                  >
-                    <i className="fab fa-angular mr-2 text-gray-500 text-base" />
-                    Angular
-                  </a>
-                </Link>
-              </li>
-
-              <li className="inline-flex">
-                <Link href="/">
-                  <a
-                    href="#"
-                    className="text-gray-800 hover:text-gray-600  text-sm block mb-4 no-underline font-semibold"
-                  >
-                    <i className="fab fa-js-square mr-2 text-gray-500 text-base" />
-                    Javascript
                   </a>
                 </Link>
               </li>

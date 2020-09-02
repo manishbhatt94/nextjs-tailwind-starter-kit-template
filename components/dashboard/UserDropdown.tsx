@@ -1,20 +1,20 @@
-import React from 'react'
-import Popper from 'popper.js'
+import React from "react";
+import Popper from "popper.js";
 
 const UserDropdown = () => {
   // dropdown props
-  const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false)
-  const btnDropdownRef = React.createRef()
-  const popoverDropdownRef = React.createRef()
+  const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
+  const btnDropdownRef = React.createRef();
+  const popoverDropdownRef = React.createRef();
   const openDropdownPopover = () => {
     new Popper(btnDropdownRef.current, popoverDropdownRef.current, {
-      placement: 'bottom-end',
-    })
-    setDropdownPopoverShow(true)
-  }
+      placement: "bottom-end",
+    });
+    setDropdownPopoverShow(true);
+  };
   const closeDropdownPopover = () => {
-    setDropdownPopoverShow(false)
-  }
+    setDropdownPopoverShow(false);
+  };
   return (
     <>
       <a
@@ -22,8 +22,8 @@ const UserDropdown = () => {
         href="#pablo"
         ref={btnDropdownRef}
         onClick={(e) => {
-          e.preventDefault()
-          dropdownPopoverShow ? closeDropdownPopover() : openDropdownPopover()
+          e.preventDefault();
+          dropdownPopoverShow ? closeDropdownPopover() : openDropdownPopover();
         }}
       >
         <div className="items-center flex">
@@ -39,15 +39,15 @@ const UserDropdown = () => {
       <div
         ref={popoverDropdownRef}
         className={
-          (dropdownPopoverShow ? 'block ' : 'hidden ') +
-          'bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1'
+          (dropdownPopoverShow ? "block " : "hidden ") +
+          "bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1"
         }
-        style={{ minWidth: '12rem' }}
+        style={{ minWidth: "12rem" }}
       >
         <a
           href="#pablo"
           className={
-            'text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800'
+            "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
           }
           onClick={(e) => e.preventDefault()}
         >
@@ -56,7 +56,7 @@ const UserDropdown = () => {
         <a
           href="#pablo"
           className={
-            'text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800'
+            "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
           }
           onClick={(e) => e.preventDefault()}
         >
@@ -65,7 +65,7 @@ const UserDropdown = () => {
         <a
           href="#pablo"
           className={
-            'text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800'
+            "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
           }
           onClick={(e) => e.preventDefault()}
         >
@@ -75,7 +75,7 @@ const UserDropdown = () => {
         <a
           href="#pablo"
           className={
-            'text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800'
+            "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-gray-800"
           }
           onClick={(e) => e.preventDefault()}
         >
@@ -83,7 +83,7 @@ const UserDropdown = () => {
         </a>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default UserDropdown
+export default UserDropdown;
